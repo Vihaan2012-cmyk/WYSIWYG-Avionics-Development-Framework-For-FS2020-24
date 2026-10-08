@@ -1,0 +1,15 @@
+{
+  "name": "@avd/shim",
+  "version": "0.1.0",
+  "license": "MIT OR Apache-2.0",
+  "description": "ACE-compatible preview host shim (SimVar, Coherent, events) for WYSIWYG Avionics Builder.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  }
+}

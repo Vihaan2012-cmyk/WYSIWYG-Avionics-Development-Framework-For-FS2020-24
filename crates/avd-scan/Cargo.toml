@@ -1,0 +1,12 @@
+[package]
+name = "avd-scan"
+description = "Aircraft scanner: variables, conventions, panel.cfg displays"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[dependencies]
+avd-core.workspace = true

@@ -1,0 +1,12 @@
+[package]
+name = "avd-svg"
+description = "SVG import and boolean path operations"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[dependencies]
+avd-core.workspace = true

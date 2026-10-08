@@ -1,0 +1,44 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/avd-core",
+    "crates/avd-project",
+    "crates/avd-expr",
+    "crates/avd-scan",
+    "crates/avd-syntax",
+    "crates/avd-model",
+    "crates/avd-check",
+    "crates/avd-build",
+    "crates/avd-svg",
+    "crates/avd-sim",
+    "crates/avd-git",
+    "src-tauri",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Vihaan2012-cmyk/WYSIWYG-Avionics-Development-Framework-For-FS2020-24"
+authors = ["Vihaan2012-cmyk"]
+
+[workspace.dependencies]
+avd-core = { path = "crates/avd-core" }
+avd-project = { path = "crates/avd-project" }
+avd-expr = { path = "crates/avd-expr" }
+avd-scan = { path = "crates/avd-scan" }
+avd-syntax = { path = "crates/avd-syntax" }
+avd-model = { path = "crates/avd-model" }
+avd-check = { path = "crates/avd-check" }
+avd-build = { path = "crates/avd-build" }
+avd-svg = { path = "crates/avd-svg" }
+avd-sim = { path = "crates/avd-sim" }
+avd-git = { path = "crates/avd-git" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+insta = { version = "1", features = ["json"] }
+
+[profile.dev.package."*"]
+opt-level = 1

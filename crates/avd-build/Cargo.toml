@@ -1,0 +1,12 @@
+[package]
+name = "avd-build"
+description = "Build pipeline: Mach invocation and ACE project output"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[dependencies]
+avd-core.workspace = true

@@ -1,0 +1,17 @@
+{
+  "name": "@avd/mach-plugin",
+  "version": "0.1.0",
+  "license": "MIT OR Apache-2.0",
+  "description": "esbuild plugins (avdResolve, avdReporter) used by WYSIWYG Avionics Builder when running Mach.",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

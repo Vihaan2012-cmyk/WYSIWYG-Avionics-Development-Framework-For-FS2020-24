@@ -1,0 +1,12 @@
+[package]
+name = "avd-git"
+description = "Git integration for the built-in git panel"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+
+[dependencies]
+avd-core.workspace = true
